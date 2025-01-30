@@ -2,20 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+    body {
+        @apply font-primary bg-primary text-secondary px-4 sm:px-10 ;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.swiper-button-prev, .swiper-button-next{
+    padding: 24px !important; 
+    background: #0C1223;
+    border-color: #2a2e5a;
+    border-width: 2px;
+    border-radius: 10px;
+    color:#ffffff !important;
+    font-weight: bold;
+    transition: 300ms;
+    top: auto !important;
+    bottom: 2% !important;
   }
-}
+  
+  .swiper-button-prev:hover, .swiper-button-next:hover{
+    background: #2a2e5a;
+    
+  }
+  
+  .swiper-button-prev{
+  right: 75px !important;
+  left: auto !important;
+  }
+  .swiper-button-next{
+    right: 15px !important;
+    left: auto !important;
+  }
+  
+  .swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 20px !important;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* #171f3b bg-color*/
+
+/* https://codepen.io/braydoncoyer/pen/LYzwoLm */
+/* https://webcrunch.com/posts/mouse-tracking-glow-effect-tailwind-css */

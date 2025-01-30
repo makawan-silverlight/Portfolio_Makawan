@@ -1,101 +1,66 @@
+"use client";
+import Link from "next/link";
+import Typewriter from 'typewriter-effect';
+import MagicBorder from "@/components/MagicBorder";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { BsDownload } from "react-icons/bs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    // Hello,My name is Makawan Saengngoen
+    // I'm a Front-End Developer
+    // Welcome to my Portfolio Website
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    // freepik hologram
+    // https://www.freepik.com/free-vector/hud-futuristic-background_1531120.htm#fromView=search&page=4&position=49&uuid=6367a85c-1f14-45d0-94a2-5524907131a8
+    // https://www.freepik.com/free-vector/futuristic-abstract-infographic-concept-with-virtual-glowing-shapes-icons-three-options-blue_11242196.htm#fromView=search&page=5&position=6&uuid=92992263-8e88-4d82-9a70-f8481866d4a0
+    // https://www.freepik.com/free-vector/gradient-technology-futuristic-background_19335216.htm#fromView=search&page=7&position=19&uuid=92992263-8e88-4d82-9a70-f8481866d4a0
+    // https://www.youtube.com/watch?v=NGrf9zfpeTM
+
+
+    <main className="container  mx-auto flex flex-col-reverse lg:flex-row justify-center items-center">
+      <section className="w-10/12 lg:w-full tracking-widest mb-36 lg:mb-0">
+        <div className="w-full flex flex-col gap-4">
+          <p className="text-lg sm:text-2xl font-bold ">Hello,My name is</p>
+          <h1 className="text-2xl sm:text-5xl font-extrabold text-header" >
+            <Typewriter
+              options={{
+                strings: ['Makawan Saengngoen'],
+                autoStart: true,
+                loop: true,
+              }}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </h1>
+          <h2 className="text-xl sm:text-3xl font-extrabold" >And I'm a <span className="text-xl sm:text-4xl font-black">Front-End Developer</span></h2>
+          <p className="text-sm w-11/12 leading-6">Welcome to my Portfolio Website. 
+          I have worked as a graphic design and motion graphic. 
+          now, I’m passionate about front-end development and proficient in HTML, CSS, JavaScript. I am familiar with React JS and Tailwind CSS. I possess strong problem-solving abilities and am a fast learner, always committed to staying updated on the latest trends in website.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-wrap gap-4 justify-start items-center mt-8">
+          <Link href={"./transcript-59080500246-graduated.pdf"} target="_blank">
+            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-primary px-8 py-1 text-xs font-normal text-header backdrop-blur-3xl">
+                DOWNLOAD CV <span className="text-base ml-2"><BsDownload /></span>
+              </span>
+            </button>
+          </Link>
+
+          <Link href={"https://github.com/makawan-silverlight"} target="_blank">
+            <MagicBorder icon={<FaGithub />} />
+          </Link>
+          <Link href={"https://www.linkedin.com/"} target="_blank">
+            <MagicBorder icon={<FaLinkedinIn />} />
+          </Link>
+
+        </div>
+      </section>
+      <section className="w-full h-[700px] flex justify-center items-center">
+        {/* <div className="w-8/12 h-[600px] bg-orange-200"></div> */}
+        <Image width={600} height={750} className="relative -z-50 lg:w-auto lg:h-auto md:max-w-[600px] md:max-h-[750px]" src={"/images/hologram.gif"} alt="gif"/>
+      </section>
+    </main>
   );
 }
