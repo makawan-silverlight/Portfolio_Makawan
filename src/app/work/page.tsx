@@ -106,13 +106,13 @@ function Work() {
                       <h3 className='text-2xl 2xl:text-4xl font-extrabold'>{data.title}</h3>
                     </div>
                     <div className='flex whitespace-nowrap flex-wrap sm:flex-nowrap gap-4 w-11/12'>
-                      <div>Description :</div>
-                      <p className='text-gray-300 whitespace-normal'>{data.description}</p>
+                      <div className='text-sm md:text-base'>Description :</div>
+                      <p className='text-sm md:text-base text-gray-300 whitespace-normal'>{data.description}</p>
                     </div>
                     <div className='flex whitespace-nowrap gap-4'>
-                      <h4>Tools : </h4>
+                      <h4 className='text-sm md:text-base'>Tools : </h4>
                       <div className='flex gap-4 flex-wrap'>
-                        {data.tag.map((tag, index) => <div className=' text-header' key={index}>{tag}</div>)}
+                        {data.tag.map((tag, index) => <div className=' text-header text-sm md:text-base' key={index}>{tag}</div>)}
                       </div>
                     </div>
 
