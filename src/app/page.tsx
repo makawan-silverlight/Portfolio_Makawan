@@ -23,9 +23,9 @@ export default function Home() {
             />
           </h1>
           <h2 className="text-xl sm:text-3xl font-extrabold" >And I'm a <span className="text-xl sm:text-4xl font-black">Front-End Developer</span></h2>
-          <p className="text-xs sm:text-sm w-11/12 leading-6">Welcome to my Portfolio Website. 
-          I have worked as a graphic design and motion graphic. 
-          now, I’m passionate about front-end development and proficient in HTML, CSS, JavaScript. I am familiar with React JS and Tailwind CSS. I possess strong problem-solving abilities and am a fast learner, always committed to staying updated on the latest trends in website.
+          <p className="text-xs sm:text-sm w-11/12 leading-6">Welcome to my Portfolio Website.
+            I have worked as a graphic design and motion graphic.
+            now, I’m passionate about front-end development and proficient in HTML, CSS, JavaScript. I am familiar with React JS and Tailwind CSS. I possess strong problem-solving abilities and am a fast learner, always committed to staying updated on the latest trends in website.
           </p>
         </div>
         <div className="flex flex-wrap gap-4 justify-start items-center mt-8">
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full h-[700px] flex justify-center items-center -mt-24 sm:mt-0">
-        <Image width={600} height={750} className="relative -z-50 lg:w-auto lg:h-auto md:max-w-[600px] md:max-h-[750px]" src={"/images/hologram.gif"} alt="gif"/>
+        <Image width={600} height={750} priority unoptimized className="relative -z-50 w-auto h-auto  aspect-auto " src={'./images/hologram_profile2.gif'} alt="hologram-gif" />
       </section>
     </main>
   );

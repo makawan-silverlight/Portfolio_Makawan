@@ -40,6 +40,7 @@ function Header() {
                 <Image
                     src={"/lightGrid.svg"}
                     alt="grid"
+                    priority
                     width={1572}
                     height={795}
                     className="absolute top-0 -z-10"

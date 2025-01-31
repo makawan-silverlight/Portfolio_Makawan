@@ -99,7 +99,7 @@ function Work() {
             {WorkData.map((data, index) => (
               <SwiperSlide key={index}>
                 <div className='flex flex-col lg:flex-row gap-8 p-10'>
-                  {data.images && <Image className='w-full lg:w-1/3 rounded-lg aspect-square' unoptimized src={data.images} alt='Work Image' />}
+                  {data.images && <Image loading='lazy' className='w-full lg:w-1/3 rounded-lg aspect-square' unoptimized src={data.images} alt='Work Image' />}
                   <div className='w-full lg:w-2/3 flex flex-col gap-8 p-6'>
                     <div className='flex flex-wrap gap-4 items-center'>
                       <h2 className='text-6xl font-black font-BungeeOutline' >{index + 1 > 9 ? index + 1 : "0" + (index + 1)}</h2>
