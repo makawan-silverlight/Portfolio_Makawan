@@ -105,7 +105,7 @@ function Work() {
                       <h2 className='text-6xl font-black font-BungeeOutline' >{index + 1 > 9 ? index + 1 : "0" + (index + 1)}</h2>
                       <h3 className='text-2xl 2xl:text-4xl font-extrabold'>{data.title}</h3>
                     </div>
-                    <div className='flex whitespace-nowrap gap-4 w-11/12'>
+                    <div className='flex whitespace-nowrap flex-wrap sm:flex-nowrap gap-4 w-11/12'>
                       <div>Description :</div>
                       <p className='text-gray-300 whitespace-normal'>{data.description}</p>
                     </div>

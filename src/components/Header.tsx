@@ -2,15 +2,12 @@
 import Image from "next/image";
 import Link from "next/link"
 import { IoHome } from "react-icons/io5";
-import type { IconType } from "react-icons";
 import { MdWork } from "react-icons/md";
 import { FaComputer } from "react-icons/fa6";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import { LinksType } from "@/interfaces";
-
-
 
 
 const links:LinksType[] = [

@@ -36,10 +36,7 @@ function Resume() {
         >
 
             <section className='w-full sm:w-4/5 lg:w-3/12 mt-20 flex flex-col gap-6'>
-                {/* <h1 className='text-5xl font-normal'>
-                    
-                    
-                </h1> */}
+
                 <div className='flex flex-col gap-4'>
                     <button onClick={() => { setTabs("About") }} className={`${baseBtn} ${tabs == "About" ? "bg-header text-primary" : "bg-[#1b2644] text-white"}`}>About me</button>
                     <button onClick={() => { setTabs("Experience") }} className={`${baseBtn} ${tabs == "Experience" ? "bg-header text-primary" : "bg-[#1b2644] text-white"}`}>Experience</button>
@@ -49,7 +46,6 @@ function Resume() {
             </section>
             <section className='w-full sm:w-4/5 lg:w-9/12 lg:mt-20 lg:mb-0 mb-36'>
                 {content}
-                {/* <Experience/> */}
             </section>
         </motion.main>
     )

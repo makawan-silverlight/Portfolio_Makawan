@@ -9,7 +9,6 @@ export default {
   theme: {
     fontFamily: {
       primary: "var(--font-orbitron)",
-      trainone : "var(--font-train_One)",
       BungeeOutline : "var(--font-Bungee_Outline)",
     },
     extend: {
